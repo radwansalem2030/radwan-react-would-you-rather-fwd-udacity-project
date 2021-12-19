@@ -42,13 +42,14 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 
 ## References:
 - Mainly All Lessons from ClassRoom
-- walking through the Planning Stage and the Coding Stage of the Udacity Chirper Project
+- Connect Session Leader help and explaining
+- Walking through the Planning Stage and the Coding Stage of the Udacity Chirper Project
 - Styling Using Semantice UI:
 	- [https://semantic-ui.com/introduction/getting-started.html] (Semantic UI)
 	- [https://james-priest.github.io/reactnd-project-would-you-rather/] (Walk Through)
 
 ## Screenshots
-![screenshot1](./public/imags/Screen1.png)
-![screenshot2](./public/imags/Screen2.png)
-![screenshot3](./public/imags/Screen3.png)
-![screenshot3](./public/imags/Screen4.png)
+![screenshot1](./public/images/Screen1.png)
+![screenshot2](./public/images/Screen2.png)
+![screenshot3](./public/images/Screen3.png)
+![screenshot3](./public/images/Screen4.png)
