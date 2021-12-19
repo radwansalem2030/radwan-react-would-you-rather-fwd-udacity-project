@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import {Segment, Grid, Header, Image, Form, Loader, Dimmer} from 'semantic-ui-react';
 import { setAuthUser } from '../actions/authUser';
 
@@ -29,7 +30,7 @@ export class LoginComp extends Component {
 }
 
 const LoginHeader = () => (
-  <Header as="h4" block attached="top" textAlign="center">
+  <Header as="h4" color = 'blue' block attached="top" textAlign="center">
     <Header.Content>Welcome to the Would You Rather App!</Header.Content>
     <Header.Subheader>Please sign in to continue</Header.Subheader>
   </Header>
@@ -107,7 +108,7 @@ class LoginForm extends Component {
           onChange={this.onChange}
           required
         />
-        <Form.Button content="Login" positive disabled={disabled} fluid />
+        <Form.Button content="Login" primary disabled={disabled} fluid />
       </Form>
     );
   }

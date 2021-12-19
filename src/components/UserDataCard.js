@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import { Segment, Header, Grid, Image } from 'semantic-ui-react';
 import PollQuestion from './PollQuestion';
 import PollAfter from './PollAfter';

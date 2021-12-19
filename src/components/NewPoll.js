@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import {Segment, Header, Grid, Divider, Form, Dimmer, Loader} from 'semantic-ui-react';
 import { handleSaveQuestion } from '../actions/questions';
 
@@ -74,7 +75,7 @@ export class NewPoll extends Component {
                 onChange={this.handleChange}
                 required
               />
-              <Form.Button positive size="tiny" fluid disabled={disabled}>
+              <Form.Button primary size="tiny" fluid disabled={disabled}>
                 Submit
               </Form.Button>
             </Form>

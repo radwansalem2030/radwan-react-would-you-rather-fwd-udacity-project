@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import {Menu, Responsive, Image, Grid, Button, Container} from 'semantic-ui-react';
 import { setAuthUser } from '../actions/authUser';
 

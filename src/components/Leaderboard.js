@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropType from 'prop-types';
 import { connect } from 'react-redux';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import {Segment, Grid, Header, Image, Label, Divider} from 'semantic-ui-react';
 
 const trophyColor = ['yellow', 'grey', 'orange'];
@@ -40,7 +41,7 @@ export class Leaderboard extends Component {
                   <Segment.Group>
                     <Header as="h5" block attached="top" content="Score" />
                     <Segment>
-                      <Label circular color="green" size="big">
+                      <Label circular color="blue" size="big">
                         {user.questionCount + user.answerCount}
                       </Label>
                     </Segment>

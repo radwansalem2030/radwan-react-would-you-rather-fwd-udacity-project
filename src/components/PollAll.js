@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import { Header, Button } from 'semantic-ui-react';
 import { colors } from '../utils/helpers';
 
@@ -36,6 +37,7 @@ export class PollAll extends Component {
           or...
         </p>
         <Button
+          primary
           color={buttonColor.name}
           size="tiny"
           fluid

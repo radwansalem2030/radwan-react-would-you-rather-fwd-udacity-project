@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+/*There is a references inside ReadMe file for using these elements from semantic css*/
 import { Header, Button, Form, Radio } from 'semantic-ui-react';
 import { handleSaveQuestionAnswer } from '../actions/users';
 
