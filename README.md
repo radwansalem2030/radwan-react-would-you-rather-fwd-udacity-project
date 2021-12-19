@@ -50,6 +50,6 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 
 ## Screenshots
 ![screenshot1](public/images/Screen1.png)
-![screenshot2](./public/iamges/Screen2.png)
-![screenshot3](./public/iamges/Screen3.png)
-![screenshot4](./public/iamges/Screen4.png)
+![screenshot2](public/iamges/Screen2.png)
+![screenshot3](public/iamges/Screen3.png)
+![screenshot4](public/iamges/Screen4.png)
