@@ -22,13 +22,15 @@ function addAnswerToUser(authUser, qid, answer) {
 }
 
 export function handleSaveQuestionAnswer(authUser, qid, answer) {
-  return dispatch => {
+  return async dispatch => {
     dispatch(addAnswerToUser(authUser, qid, answer));
     dispatch(addAnswerToQuestion(authUser, qid, answer));
 
-    return saveQuestionAnswer(authUser, qid, answer).catch(e => {
+    try {
+      return await saveQuestionAnswer(authUser, qid, answer);
+    } catch (e) {
       console.warn('Error in handleSaveQuestionAnswer:', e);
-    });
+    }
   };
 }
 

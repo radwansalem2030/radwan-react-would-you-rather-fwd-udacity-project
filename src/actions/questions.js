@@ -29,12 +29,9 @@ function addQuestion(question) {
 }
 
 export function handleSaveQuestion(optionOneText, optionTwoText, author) {
-  return dispatch => {
-    return saveQuestion({ optionOneText, optionTwoText, author }).then(
-      question => {
-        dispatch(addQuestion(question));
-        dispatch(addQuestionToUser(question));
-      }
-    );
+  return async dispatch => {
+    const question_1 = await saveQuestion({ optionOneText, optionTwoText, author });
+    dispatch(addQuestion(question_1));
+    dispatch(addQuestionToUser(question_1));
   };
 }

@@ -94,7 +94,7 @@ class LoginForm extends Component {
 
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Header as="h2" color="green">
+        <Header as="h2" color="Red">
           Sign In
         </Header>
         <Form.Dropdown

@@ -2,15 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {
-  Segment,
-  Header,
-  Grid,
-  Divider,
-  Form,
-  Dimmer,
-  Loader
-} from 'semantic-ui-react';
+import {Segment, Header, Grid, Divider, Form, Dimmer, Loader} from 'semantic-ui-react';
 import { handleSaveQuestion } from '../actions/questions';
 
 export class NewPoll extends Component {
@@ -99,7 +91,4 @@ function mapStateToProps({ authUser }) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  { handleSaveQuestion }
-)(NewPoll);
+export default connect(mapStateToProps, { handleSaveQuestion })(NewPoll);
