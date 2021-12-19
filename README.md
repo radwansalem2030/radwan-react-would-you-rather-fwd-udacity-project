@@ -1,70 +1,54 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Would You Rather Project: A Game - Web App
+Would You Rather web app for for a web game is created Using Redux to manage the application state as a part of the [FWD-Advanced Track-Udacity's React Nanodegree program](https://egfwd.com/).
 
-## Available Scripts
+## About
+Would You Rather is a single-page app (All actions for navigation happens in same page), Let you to mange your a questions game according to:
+- login with Your User
+- Creat Your Own Question
+- Answering Question for other
+- Know Rating in leaderboard page
 
-In the project directory, you can run:
 
-### `npm start`
+### Udacity Starter Code
+[https://github.com/udacity/reactnd-project-would-you-rather-starter](https://github.com/udacity/reactnd-project-would-you-rather-starter)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Backend
+A `_DATA.js` file represents a fake database and methods that let you access the data. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Development
+- A A `_DATA.js` file represents a fake database and methods that let you access the data provided from Udacity start code
+- I Wrote an interactivity to the app by coding using React/Redux to mange the state.
+- Using Semantic CSS to develope the styling.
 
-### `npm test`
+## To Start Project(installation)
+* Clone the repository
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Would You Rather Project Features are:
+- You Can Login with your own user.
+- You can create your own questions to start your game.
+- Also you answer question for other users.
+- You Can check leaderboard to know the rate.
 
-### `npm run build`
+* Using React Components to achieve interactivity with Route.
+- HTML
+- CSS
+- javascript
+* Using React Components to achieve interactivity with Route.
+* Using Redux to achieve Manage the state.
+* Using Semantic css for styling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## References:
+- Mainly All Lessons from ClassRoom
+- walking through the Planning Stage and the Coding Stage of the Udacity Chirper Project
+- Styling Using Semantice UI:
+	- [https://semantic-ui.com/introduction/getting-started.html](Semantic UI)
+	- [https://james-priest.github.io/reactnd-project-would-you-rather/](Walk Through)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+![screenshot1](./public/imags/Screen1.png)
+![screenshot2](./public/imags/Screen2.png)
+![screenshot3](./public/imags/Screen3.png)
+![screenshot3](./public/imags/Screen4.png)
