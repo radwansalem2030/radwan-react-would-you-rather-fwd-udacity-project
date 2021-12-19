@@ -44,8 +44,8 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 - Mainly All Lessons from ClassRoom
 - walking through the Planning Stage and the Coding Stage of the Udacity Chirper Project
 - Styling Using Semantice UI:
-	- [https://semantic-ui.com/introduction/getting-started.html](Semantic UI)
-	- [https://james-priest.github.io/reactnd-project-would-you-rather/](Walk Through)
+	- [https://semantic-ui.com/introduction/getting-started.html] (Semantic UI)
+	- [https://james-priest.github.io/reactnd-project-would-you-rather/] (Walk Through)
 
 ## Screenshots
 ![screenshot1](./public/imags/Screen1.png)
