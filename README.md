@@ -49,7 +49,7 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 	- [https://james-priest.github.io/reactnd-project-would-you-rather/] (Walk Through)
 
 ## Screenshots
-![screenshot1](./public/imgs/Screen1.png)
-![screenshot2](./public/imgs/Screen2.png)
-![screenshot3](./public/imgs/Screen3.png)
-![screenshot4](./public/imgs/Screen4.png)
+![screenshot1](/public/images/Screen1.png)
+![screenshot2](public/iamges/Screen2.png)
+![screenshot3](iamges/Screen3.png)
+![screenshot4](./public/iamges/Screen4.png)
