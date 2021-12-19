@@ -17,7 +17,7 @@ Would You Rather is a single-page app (All actions for navigation happens in sam
 A `_DATA.js` file represents a fake database and methods that let you access the data. 
 
 ## Development
-- A A `_DATA.js` file represents a fake database and methods that let you access the data provided from Udacity start code
+- A `_DATA.js` file represents a fake database and methods that let you access the data provided from Udacity start code
 - I Wrote an interactivity to the app by coding using React/Redux to mange the state.
 - Using Semantic CSS to develope the styling.
 
@@ -32,7 +32,7 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 - Also you answer question for other users.
 - You Can check leaderboard to know the rate.
 
-* Using React Components to achieve interactivity with Route.
+## Programing Languages:
 - HTML
 - CSS
 - javascript
@@ -49,7 +49,7 @@ A `_DATA.js` file represents a fake database and methods that let you access the
 	- [https://james-priest.github.io/reactnd-project-would-you-rather/] (Walk Through)
 
 ## Screenshots
-![screenshot1](./public/images/Screen1.png)
-![screenshot2](./public/images/Screen2.png)
-![screenshot3](./public/images/Screen3.png)
-![screenshot3](./public/images/Screen4.png)
+![screenshot1](/public/images/Screen1.png)
+![screenshot2](/public/images/Screen2.png)
+![screenshot3](/public/images/Screen3.png)
+![screenshot3](/public/images/Screen4.png)
