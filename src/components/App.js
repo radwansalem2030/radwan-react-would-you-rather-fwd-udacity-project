@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Grid } from 'semantic-ui-react';
 import { handleInitialData } from '../actions/shared';
 import { connect } from 'react-redux';
-import Login from './Login';
-import Nav from './Nav';
-import Home from './Home';
-import UserCard from './UserCard';
+import LoginComp from './LoginComp';
+import NavBar from './NavBar';
+import HomePage from './HomePage';
+import UserDataCard from './UserDataCard';
 import NewPoll from './NewPoll';
 import Leaderboard from './Leaderboard';
-import NoMatch from './NoMatch';
+import ErrorPage from './ErrorPage';
 
 
 class App extends Component {
@@ -25,21 +25,21 @@ class App extends Component {
             <Route
               render={() => (
                 <ContentGrid>
-                  <Login />
+                  <LoginComp />
                 </ContentGrid>
               )}
             />
           ) : (
             <Fragment>
-              <Nav />
+              <NavBar />
               <ContentGrid>
                 <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/questions/bad_id" component={NoMatch} />
-                  <Route path="/questions/:question_id" component={UserCard} />
+                  <Route exact path="/" component={HomePage} />
+                  <Route path="/questions/bad_id" component={ErrorPage} />
+                  <Route path="/questions/:question_id" component={UserDataCard} />
                   <Route path="/add" component={NewPoll} />
                   <Route path="/leaderboard" component={Leaderboard} />
-                  <Route component={NoMatch} />
+                  <Route component={ErrorPage} />
                 </Switch>
               </ContentGrid>
             </Fragment>
@@ -64,7 +64,4 @@ function mapStateToProps({ authUser }) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  { handleInitialData }
-)(App);
+export default connect(mapStateToProps, { handleInitialData })(App);

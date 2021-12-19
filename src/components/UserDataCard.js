@@ -4,32 +4,32 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { Segment, Header, Grid, Image } from 'semantic-ui-react';
 import PollQuestion from './PollQuestion';
-import PollResult from './PollResult';
-import PollTeaser from './PollTeaser';
+import PollAfter from './PollAfter';
+import PollAll from './PollAll';
 import { colors } from '../utils/helpers';
 
 const pollTypes = {
-  POLL_TEASER: 'POLL_TEASER',
+  POLL_ALL: 'POLL_ALLER',
   POLL_QUESTION: 'POLL_QUESTION',
-  POLL_RESULT: 'POLL_RESULT'
+  POLL_AFTER: 'POLL_AFTER'
 };
 
 const PollContent = props => {
   const { pollType, question, unanswered } = props;
 
   switch (pollType) {
-    case pollTypes.POLL_TEASER:
-      return <PollTeaser question={question} unanswered={unanswered} />;
+    case pollTypes.POLL_ALL:
+      return <PollAll question={question} unanswered={unanswered} />;
     case pollTypes.POLL_QUESTION:
       return <PollQuestion question={question} />;
-    case pollTypes.POLL_RESULT:
-      return <PollResult question={question} />;
+    case pollTypes.POLL_AFTER:
+      return <PollAfter question={question} />;
     default:
       return;
   }
 };
 
-export class UserCard extends Component {
+export class UserDataCard extends Component {
   static propTypes = {
     question: PropTypes.object,
     author: PropTypes.object,
@@ -98,7 +98,7 @@ function mapStateToProps(
   if (question_id !== undefined) {
     question = questions[question_id];
     author = users[question.author];
-    pollType = pollTypes.POLL_TEASER;
+    pollType = pollTypes.POLL_ALL;
   } else {
     const { question_id } = match.params;
     question = questions[question_id];
@@ -110,7 +110,7 @@ function mapStateToProps(
       author = users[question.author];
       pollType = pollTypes.POLL_QUESTION;
       if (Object.keys(user.answers).includes(question.id)) {
-        pollType = pollTypes.POLL_RESULT;
+        pollType = pollTypes.POLL_AFTER;
       }
     }
   }
@@ -123,4 +123,4 @@ function mapStateToProps(
   };
 }
 
-export default connect(mapStateToProps)(UserCard);
+export default connect(mapStateToProps)(UserDataCard);

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Tab } from 'semantic-ui-react';
-import UserCard from './UserCard';
+import UserDataCard from './UserDataCard';
 
-export class Home extends Component {
+export class HomePage extends Component {
   static propTypes = {
     userQuestionData: PropTypes.object.isRequired
   };
@@ -23,7 +23,7 @@ const panes = props => {
       render: () => (
         <Tab.Pane>
           {userQuestionData.answered.map(question => (
-            <UserCard
+            <UserDataCard
               key={question.id}
               question_id={question.id}
               unanswered={true}
@@ -37,7 +37,7 @@ const panes = props => {
       render: () => (
         <Tab.Pane>
           {userQuestionData.unanswered.map(question => (
-            <UserCard
+            <UserDataCard
               key={question.id}
               question_id={question.id}
               unanswered={false}
@@ -66,4 +66,4 @@ function mapStateToProps({ authUser, users, questions }) {
   };
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(HomePage);

@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import { Header, Button } from 'semantic-ui-react';
 import { colors } from '../utils/helpers';
 
-export class PollTeaser extends Component {
+export class PollAll extends Component {
   static propTypes = {
     question: PropTypes.object.isRequired,
     unanswered: PropTypes.bool.isRequired
@@ -47,4 +47,4 @@ export class PollTeaser extends Component {
   }
 }
 
-export default PollTeaser;
+export default PollAll;

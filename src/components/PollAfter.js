@@ -23,7 +23,7 @@ const YourVoteLabel = () => (
   </Label>
 );
 
-export class PollResult extends Component {
+export class PollAfter extends Component {
   static propTypes = {
     history: PropTypes.object.isRequired,
     question: PropTypes.object.isRequired,
@@ -102,4 +102,4 @@ function mapStateToProps({ users, authUser }) {
   };
 }
 
-export default withRouter(connect(mapStateToProps)(PollResult));
+export default withRouter(connect(mapStateToProps)(PollAfter));

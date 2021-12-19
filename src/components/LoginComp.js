@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import {Segment, Grid, Header, Image, Form, Loader, Dimmer} from 'semantic-ui-react';
 import { setAuthUser } from '../actions/authUser';
 
-export class Login extends Component {
+export class LoginComp extends Component {
   state = {
     loading: false
   };
@@ -124,4 +124,4 @@ function mapStateToProps({ users }) {
   };
 }
 
-export default Login;
+export default LoginComp;

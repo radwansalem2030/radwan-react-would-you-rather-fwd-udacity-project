@@ -11,7 +11,7 @@ import {
 } from 'semantic-ui-react';
 import { setAuthUser } from '../actions/authUser';
 
-class Nav extends Component {
+class NavBar extends Component {
   handleLogout = e => {
     e.preventDefault();
     this.props.setAuthUser(null);
@@ -140,7 +140,4 @@ function mapStateToProps({ users, authUser }) {
   };
 }
 
-export default connect(
-  mapStateToProps,
-  { setAuthUser }
-)(Nav);
+export default connect(mapStateToProps, { setAuthUser })(NavBar);
