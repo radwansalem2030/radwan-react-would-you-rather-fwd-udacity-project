@@ -1,6 +1,6 @@
 
 # Would You Rather Project: A Game - Web App
-Would You Rather web app for for a web game is created Using Redux to manage the application state as a part of the [FWD-Advanced Track-Udacity's React Nanodegree program](https://egfwd.com/).
+Would You Rather web app for a web game is created Using Redux to manage the application state as a part of the [FWD-Advanced Track-Udacity's React Nanodegree program](https://egfwd.com/).
 
 ## About
 Would You Rather is a single-page app (All actions for navigation happens in same page), Let you to mange your a questions game according to:
